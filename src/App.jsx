@@ -19,7 +19,7 @@ const VENUES = [ { id: "v1", name: "Khimki Badminton Club", address: "г. Хим
 
 const allSports = ["Бадминтон", "Настольный теннис", "Сквош", "Падел"];
 
-function Badge({ children }: { children: React.ReactNode }) { return ( <span className="inline-flex items-center px-2 py-0.5 text-xs rounded-full bg-lime-300/20 text-lime-300 border border-lime-300/30"> {children} </span> ); }
+function Badge({ children }) { return ( <span className="inline-flex items-center px-2 py-0.5 text-xs rounded-full bg-lime-300/20 text-lime-300 border border-lime-300/30"> {children} </span> ); }
 
 function Modal({ open, onClose, children }: any) { if (!open) return null; return ( <div className="fixed inset-0 z-50 flex items-center justify-center"> <div
 className="absolute inset-0 bg-black/70 backdrop-blur-sm"
